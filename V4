@@ -10,6 +10,8 @@ local Tab = Window:MakeTab({
     PremiumOnly = false
 })
 
+----
+
 Tab:AddToggle({
     Name = "AUTO FARM 1",
     Default = false,
@@ -204,16 +206,6 @@ local Tab = Window:MakeTab({
 })
 
 ----
-
-Tab:AddToggle({
-    Name = "cooming soon",
-    Default = false,
-    Callback = function(Value)
-        _G. FARM = Value 
-
-    end
-end
-})
 
 
 
