@@ -1,12 +1,221 @@
-local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Window = Library.CreateLib("XEO Hub V.4", "DarkTheme")
-local Tab = Window:NewTab("MAIN")
-local Section = Tab:NewSection("Teleport to 5k")
-Section:NewToggle("Teleport", "to 5k.", function(state)
-    _G.Auto = state 
- funtion(state)
-    while _G.Auto do wait()
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-391571.40625, 3.0963189601898193, 0)
-        wait()
-    end 
-end)
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Window = OrionLib:MakeWindow({Name = "Xeo Hub", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+
+
+
+
+local Tab = Window:MakeTab({
+    Name = "FARM",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+Tab:AddToggle({
+    Name = "AUTO FARM 1",
+    Default = false,
+    Callback = function(Value)
+        _G. FARM = Value 
+while _G. FARM do wait ()
+    local args = {
+        [1] = "1"
+    }
+    
+    game:GetService("ReplicatedStorage"):WaitForChild("common"):WaitForChild("packages"):WaitForChild("_Index"):WaitForChild("sleitnick_knit@1.5.1"):WaitForChild("knit"):WaitForChild("Services"):WaitForChild("BagService"):WaitForChild("RE"):WaitForChild("Click"):FireServer(unpack(args))
+   
+   end
+end
+})
+
+----
+
+Tab:AddToggle({
+    Name = "AUTO FARM 2",
+    Default = false,
+    Callback = function(Value)
+        _G. FARM = Value 
+while _G. FARM do wait ()
+    local args = {
+        [1] = "2"
+    }
+    
+    game:GetService("ReplicatedStorage"):WaitForChild("common"):WaitForChild("packages"):WaitForChild("_Index"):WaitForChild("sleitnick_knit@1.5.1"):WaitForChild("knit"):WaitForChild("Services"):WaitForChild("BagService"):WaitForChild("RE"):WaitForChild("Click"):FireServer(unpack(args))
+
+   end
+end
+})
+
+----
+
+Tab:AddToggle({
+    Name = "AUTO FARM 3",
+    Default = false,
+    Callback = function(Value)
+        _G. FARM = Value 
+while _G. FARM do wait ()
+    local args = {
+        [1] = "3"
+    }
+    
+    game:GetService("ReplicatedStorage"):WaitForChild("common"):WaitForChild("packages"):WaitForChild("_Index"):WaitForChild("sleitnick_knit@1.5.1"):WaitForChild("knit"):WaitForChild("Services"):WaitForChild("BagService"):WaitForChild("RE"):WaitForChild("Click"):FireServer(unpack(args))
+
+   end
+end
+})
+
+----
+
+Tab:AddToggle({
+    Name = "AUTO FARM 4",
+    Default = false,
+    Callback = function(Value)
+        _G. FARM = Value 
+while _G. FARM do wait ()
+    local args = {
+        [1] = "4"
+    }
+    
+    game:GetService("ReplicatedStorage"):WaitForChild("common"):WaitForChild("packages"):WaitForChild("_Index"):WaitForChild("sleitnick_knit@1.5.1"):WaitForChild("knit"):WaitForChild("Services"):WaitForChild("BagService"):WaitForChild("RE"):WaitForChild("Click"):FireServer(unpack(args))
+
+   end
+end
+})
+
+----
+
+local Tab = Window:MakeTab({
+    Name = "Fight",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+----
+
+Tab:AddToggle({
+    Name = "AUTO Attack",
+    Default = false,
+    Callback = function(Value)
+        _G. FARM = Value 
+while _G. FARM do wait ()
+    game:GetService("ReplicatedStorage"):WaitForChild("common"):WaitForChild("packages"):WaitForChild("_Index"):WaitForChild("sleitnick_knit@1.5.1"):WaitForChild("knit"):WaitForChild("Services"):WaitForChild("FightService"):WaitForChild("RF"):WaitForChild("Attack"):InvokeServer()
+
+   end
+end
+})
+
+----
+Tab:AddToggle({
+    Name = "AUTO fight1",
+    Default = false,
+    Callback = function(Value)
+        _G. FARM = Value 
+while _G. FARM do wait ()
+    local args = {
+        [1] = workspace:WaitForChild("Maps"):WaitForChild("Spawn"):WaitForChild("Fight"):WaitForChild("Arena1")
+    }
+    
+    game:GetService("ReplicatedStorage"):WaitForChild("common"):WaitForChild("packages"):WaitForChild("_Index"):WaitForChild("sleitnick_knit@1.5.1"):WaitForChild("knit"):WaitForChild("Services"):WaitForChild("FightService"):WaitForChild("RF"):WaitForChild("Join"):InvokeServer(unpack(args))
+
+   end
+end
+})
+
+----
+
+Tab:AddToggle({
+    Name = "AUTO fight2",
+    Default = false,
+    Callback = function(Value)
+        _G. FARM = Value 
+while _G. FARM do wait ()
+    local args = {
+        [1] = workspace:WaitForChild("Maps"):WaitForChild("Spawn"):WaitForChild("Fight"):WaitForChild("Arena2")
+    }
+    
+    game:GetService("ReplicatedStorage"):WaitForChild("common"):WaitForChild("packages"):WaitForChild("_Index"):WaitForChild("sleitnick_knit@1.5.1"):WaitForChild("knit"):WaitForChild("Services"):WaitForChild("FightService"):WaitForChild("RF"):WaitForChild("Join"):InvokeServer(unpack(args))
+
+  end
+end
+})
+
+----
+
+Tab:AddToggle({
+    Name = "AUTO fight3",
+    Default = false,
+    Callback = function(Value)
+        _G. FARM = Value 
+while _G. FARM do wait ()
+    local args = {
+        [1] = workspace:WaitForChild("Maps"):WaitForChild("Spawn"):WaitForChild("Fight"):WaitForChild("Arena3")
+    }
+    
+    game:GetService("ReplicatedStorage"):WaitForChild("common"):WaitForChild("packages"):WaitForChild("_Index"):WaitForChild("sleitnick_knit@1.5.1"):WaitForChild("knit"):WaitForChild("Services"):WaitForChild("FightService"):WaitForChild("RF"):WaitForChild("Join"):InvokeServer(unpack(args))
+
+   end
+end
+})
+
+----
+
+Tab:AddToggle({
+    Name = "AUTO fight4",
+    Default = false,
+    Callback = function(Value)
+        _G. FARM = Value 
+while _G. FARM do wait ()
+    local args = {
+        [1] = workspace:WaitForChild("Maps"):WaitForChild("Spawn"):WaitForChild("Fight"):WaitForChild("Arena4")
+    }
+    
+    game:GetService("ReplicatedStorage"):WaitForChild("common"):WaitForChild("packages"):WaitForChild("_Index"):WaitForChild("sleitnick_knit@1.5.1"):WaitForChild("knit"):WaitForChild("Services"):WaitForChild("FightService"):WaitForChild("RF"):WaitForChild("Join"):InvokeServer(unpack(args))
+
+   end
+end
+})
+
+----
+
+local Tab = Window:MakeTab({
+    Name = "Fight",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+----
+
+Tab:AddToggle({
+    Name = "AUTO Rebirth",
+    Default = false,
+    Callback = function(Value)
+        _G. FARM = Value 
+while _G. FARM do wait ()
+    game:GetService("ReplicatedStorage"):WaitForChild("common"):WaitForChild("packages"):WaitForChild("_Index"):WaitForChild("sleitnick_knit@1.5.1"):WaitForChild("knit"):WaitForChild("Services"):WaitForChild("RebirthService"):WaitForChild("RE"):WaitForChild("Rebirth"):FireServer()
+
+   end
+end
+})
+
+----
+
+local Tab = Window:MakeTab({
+    Name = "egg",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+----
+
+Tab:AddToggle({
+    Name = "cooming soon",
+    Default = false,
+    Callback = function(Value)
+        _G. FARM = Value 
+
+    end
+end
+})
+
+
+
+
+OrionLib:Init()
