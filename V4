@@ -97,7 +97,7 @@ Tab:AddToggle({
     Default = false,
     Callback = function(Value)
         _G. FARM = Value 
-while _G. FARM do wait ()
+while _G. FARM do wait (.0)
     game:GetService("ReplicatedStorage"):WaitForChild("common"):WaitForChild("packages"):WaitForChild("_Index"):WaitForChild("sleitnick_knit@1.5.1"):WaitForChild("knit"):WaitForChild("Services"):WaitForChild("FightService"):WaitForChild("RF"):WaitForChild("Attack"):InvokeServer()
 
    end
@@ -110,7 +110,7 @@ Tab:AddToggle({
     Default = false,
     Callback = function(Value)
         _G. FARM = Value 
-while _G. FARM do wait ()
+while _G. FARM do wait (.9)
     local args = {
         [1] = workspace:WaitForChild("Maps"):WaitForChild("Spawn"):WaitForChild("Fight"):WaitForChild("Arena1")
     }
@@ -128,7 +128,7 @@ Tab:AddToggle({
     Default = false,
     Callback = function(Value)
         _G. FARM = Value 
-while _G. FARM do wait ()
+while _G. FARM do wait (.9)
     local args = {
         [1] = workspace:WaitForChild("Maps"):WaitForChild("Spawn"):WaitForChild("Fight"):WaitForChild("Arena2")
     }
@@ -146,7 +146,7 @@ Tab:AddToggle({
     Default = false,
     Callback = function(Value)
         _G. FARM = Value 
-while _G. FARM do wait ()
+while _G. FARM do wait (.9)
     local args = {
         [1] = workspace:WaitForChild("Maps"):WaitForChild("Spawn"):WaitForChild("Fight"):WaitForChild("Arena3")
     }
@@ -164,7 +164,7 @@ Tab:AddToggle({
     Default = false,
     Callback = function(Value)
         _G. FARM = Value 
-while _G. FARM do wait ()
+while _G. FARM do wait (.9)
     local args = {
         [1] = workspace:WaitForChild("Maps"):WaitForChild("Spawn"):WaitForChild("Fight"):WaitForChild("Arena4")
     }
@@ -190,7 +190,7 @@ Tab:AddToggle({
     Default = false,
     Callback = function(Value)
         _G. FARM = Value 
-while _G. FARM do wait ()
+while _G. FARM do wait (.5)
     game:GetService("ReplicatedStorage"):WaitForChild("common"):WaitForChild("packages"):WaitForChild("_Index"):WaitForChild("sleitnick_knit@1.5.1"):WaitForChild("knit"):WaitForChild("Services"):WaitForChild("RebirthService"):WaitForChild("RE"):WaitForChild("Rebirth"):FireServer()
 
    end
