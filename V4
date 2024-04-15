@@ -178,7 +178,7 @@ end
 ----
 
 local Tab = Window:MakeTab({
-    Name = "Fight",
+    Name = "Rebirth",
     Icon = "rbxassetid://4483345998",
     PremiumOnly = false
 })
